@@ -1,0 +1,13 @@
+.footer {
+    background-color: $dark-color;
+    color: $light-color;
+    padding: $padding-base;
+  
+    a {
+      color: $light-color;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+  

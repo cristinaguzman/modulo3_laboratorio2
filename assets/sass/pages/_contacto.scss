@@ -1,0 +1,34 @@
+.welcome {
+    background-color: $light-color;
+    text-align: center;
+    padding: $padding-base * 3 0;
+  
+    .display-4 {
+      color: $primary-color;
+    }
+  }
+  
+  .services {
+    .services__title {
+      color: $primary-color;
+      text-align: center;
+    }
+  
+    .services__item {
+      margin-bottom: $padding-base * 2;
+  
+      img {
+        max-width: 100%;
+        margin-bottom: $padding-base;
+      }
+    }
+  }
+  
+  .testimonials {
+    background-color: $light-color;
+  
+    .blockquote-footer {
+      color: $secondary-color;
+    }
+  }
+  

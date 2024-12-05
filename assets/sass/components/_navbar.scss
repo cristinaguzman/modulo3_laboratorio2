@@ -1,0 +1,11 @@
+.navbar {
+    background-color: $primary-color;
+  
+    .nav-link {
+      color: $light-color;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+  

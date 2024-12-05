@@ -1,0 +1,6 @@
+// Sobreescribir variables de Bootstrap (si es necesario)
+$primary: $primary-color;
+$secondary: $secondary-color;
+
+// Importar Bootstrap
+@import "~bootstrap/scss/bootstrap";

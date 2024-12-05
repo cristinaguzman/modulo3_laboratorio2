@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cristina Guzmán" />
+    <title>Hospital Privado Doctor Salud</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Cabecera del sitio -->
+    <header class="header bg-primary py-3">
+        <nav class="container navbar navbar-expand-lg navbar-dark">
+            <a href="#" class="navbar-brand">
+                <img src="assets/img/logo.png" alt="Logo del Hospital" width="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="medicos.html" class="nav-link">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="equipomedico.html" class="nav-link">Equipo Médico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+ <!-- Cabecera del sitio -->
+
+    <!-- Sección de bienvenida -->
+    <section class="welcome bg-light text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Bienvenidos al Hospital Privado</h1>
+            <p class="lead">Nuestra misión es ofrecer una atención médica de calidad centrada en el bienestar del
+                paciente.</p>
+        </div>
+    </section>
+ <!-- Sección de bienvenida -->
+
+    <!-- Sección de Servicios Médicos -->
+    <section class="services py-5" id="servicios">
+        <div class="container">
+            <header class="text-center mb-5">
+                <h2 class="h2">Servicios Médicos</h2>
+            </header>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="assets/img/consulta.png" alt="Consultas Médicas" class="img-fluid mb-3">
+                    <h3>Consultas Médicas</h3>
+                    <p>Atención especializada en diversas áreas de la medicina.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="assets/img/urgencias.png" alt="Urgencias" class="img-fluid mb-3">
+                    <h3>Urgencias</h3>
+                    <p>Atención inmediata para emergencias las 24 horas.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="assets/img/especialidades.png" alt="Especialidades" class="img-fluid mb-3">
+                    <h3>Especialidades</h3>
+                    <p>Contamos con los mejores especialistas en diversas áreas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Sección de Servicios Médicos -->
+
+    <!-- Sección de Testimonios -->
+    <section class="testimonials bg-light py-5">
+        <div class="container">
+            <header class="text-center mb-5">
+                <h2 class="h2">Testimonios de Pacientes</h2>
+            </header>
+            <div class="row">
+                <div class="col-md-6">
+                    <blockquote class="blockquote">
+                        <p>"La atención fue excelente y todo el personal estuvo siempre dispuesto a ayudarme."</p>
+                        <footer class="blockquote-footer">Juan Pérez</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-6">
+                    <blockquote class="blockquote">
+                        <p>"Un hospital que realmente se preocupa por sus pacientes."</p>
+                        <footer class="blockquote-footer">Ana López</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Sección de Testimonios -->
+
+    <!-- Sección de Contacto con Validación -->
+    <section class="contact bg-light py-5" id="contacto">
+        <div class="container">
+            <header class="text-center mb-5">
+                <h2 class="h2">listado de doctores</h2>
+            </header>
+            <div id="doctores2-info"></div>
+            <p id="error-message" class="text-danger mt-3" style="display: none;">Por favor, ingresa un número válido.
+            </p>
+        </div>
+    </section>
+     <!-- Sección de Contacto con Validación -->
+      
+    <!-- formulario en el index -->
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <header class="text-center mb-4">
+                <h2 class="h2">Contáctanos</h2>
+                <p class="lead text-secondary">Déjanos tus datos y nos pondremos en contacto contigo lo antes posible.</p>
+            </header>
+    
+            <form id="contacto-form" class="needs-validation mx-auto" novalidate style="max-width: 600px;">
+                <div class="form-group">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu Nombre" required>
+                    <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="correo" class="form-label">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" class="form-control" placeholder="Tu Correo Electrónico" required>
+                    <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" class="form-control" placeholder="Escribe tu mensaje..." required></textarea>
+                    <div class="invalid-feedback">Por favor, escribe un mensaje.</div>
+                </div>
+    
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg px-5 mt-3">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+   <!-- formulario en el index -->
+
+    <!-- Pie de página -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <nav>
+                <ul class="list-unstyled d-flex justify-content-center mb-4">
+                    <li class="mx-3"><a href="./index.html" class="text-white">Inicio</a></li>
+                    <li class="mx-3"><a href="./medicos.html" class="text-white">Equipo Médico</a></li>
+                    <li class="mx-3"><a href="contacto.html" class="text-white">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="mb-3">
+                <p>Síguenos en nuestras redes sociales:</p>
+                <a href="#" target="_blank"><img src="assets/img/instagram.svg" alt="Instagram" class="mx-2"
+                        width="30"></a>
+                <a href="#" target="_blank"><img src="assets/img/instagram.svg" alt="WhatsApp" class="mx-2"
+                        width="30"></a>
+            </div>
+            <p>© 2024 Hospital Privado</p>
+        </div>
+    </footer>
+<!-- Pie de página -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

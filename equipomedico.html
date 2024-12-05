@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cristina Guzmán" />
+    <title>Hospital Privado Doctor Salud</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Cabecera del sitio -->
+    <header class="header bg-primary py-3">
+        <nav class="container navbar navbar-expand-lg navbar-dark">
+            <a href="#" class="navbar-brand">
+                <img src="assets/img/logo.png" alt="Logo del Hospital" width="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="medicos.html" class="nav-link">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="equipomedico.html" class="nav-link">Equipo Médico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección de bienvenida -->
+    <section class="welcome text-center py-5 bg-light">
+        <div class="container">
+            <h1 class="welcome__title display-4 text-primary">Nuestro Equipo Médico</h1>
+            <p class="welcome__text">Nuestro equipo médico está comprometido con la misión de ofrecer una atención de calidad</p>
+        </div>
+    </section>
+
+    <!-- Sección del Equipo Médico -->
+    <section class="team py-5" id="equipo">
+        <div class="container">
+            <header class="text-center mb-4">
+                <h2 class="team__title text-primary">Equipo Médico</h2>
+                <p class="team__description">En el Hospital Privado, contamos con un equipo de médicos altamente calificados, comprometidos con la excelencia médica y el bienestar de nuestros pacientes.</p>
+            </header>
+
+            <div id="doctor-list" class="row">
+                <!-- Aquí se insertarán dinámicamente los doctores -->
+            </div>
+        </div>
+    </section>
+
+       <!-- Pie de página -->
+       <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <nav>
+                <ul class="list-unstyled d-flex justify-content-center mb-4">
+                    <li class="mx-3"><a href="./index.html" class="text-white">Inicio</a></li>
+                    <li class="mx-3"><a href="./medicos.html" class="text-white">Equipo Médico</a></li>
+                    <li class="mx-3"><a href="contacto.html" class="text-white">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="mb-3">
+                <p>Síguenos en nuestras redes sociales:</p>
+                <a href="#" target="_blank"><img src="assets/img/instagram.svg" alt="Instagram" class="mx-2" width="30"></a>
+                <a href="#" target="_blank"><img src="assets/img/whatsapp.svg" alt="WhatsApp" class="mx-2" width="30"></a>
+            </div>
+            <p>© 2024 Hospital Privado</p>
+        </div>
+    </footer>
+   <!-- Pie de página -->
+</body>
+<script src="assets/js/script.js"></script>
+
+</html>
